@@ -1,8 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/MIYWvg4x)
-
 # Travel Goo Website
-
-This project is a simple static website for a travel agency named "Travel Goo." 
+This project is a simple static website for a travel agency named "Travel Goo." I have implemented this project in HTML and SASS preprocessor scripting language.
 It showcases various sections like services, popular destinations, best packages, customer reviews, and provides a subscription form for users to stay updated with the latest news and offers.
 
 ## Table of Contents
