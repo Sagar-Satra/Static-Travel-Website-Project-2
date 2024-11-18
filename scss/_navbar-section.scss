@@ -1,0 +1,116 @@
+/* 1st page styling */
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    background:linear-gradient(0deg, rgb(249, 249, 249),20%, rgba(19, 19, 19, 0.188)), url(../images/travel.jpg);
+    background-size:cover;
+    color: white;
+    background-position: center center;
+    background-repeat:no-repeat;
+    min-height: 50vh;
+    height: 100vh; /* Full viewport height */
+   
+    & .header{
+      // display: flex;
+      // align-items: center;
+      // justify-content: space-between;
+      @include flex-items-layout(flex,row,center,space-between);
+      position: fixed;
+      background-color: rgba(19,19,19,0.5);
+      color: #fff;
+      width: 100%;
+      height: 70px;
+      /* apparently a common height for navbar */
+      top: 0px;
+      padding: 0 30px;
+      z-index: 100;
+
+      & >.logo {
+          font-size: 20px;
+          font-weight: bolder;
+          position: relative;
+          float: left;
+          width: 10%;
+      }
+    }
+  }
+ /* Centered section inside the top navigation */
+nav {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+
+    & a{
+      color: rgb(255, 255, 255);
+      text-align: center;
+      margin: 25px 10px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+      width: auto;
+      padding: 20px 10px;
+
+      &:hover{
+        @include navbar-icon-hover-effect();
+      }
+    }
+  } 
+
+.header-right {
+    font-size: 30px;
+
+    & .star-icon {
+      @extend .icon-orange;
+      line-height: 25px;
+      text-align: center;
+      margin: 0px;
+      padding: 15px 0px;
+
+      &:hover{
+        @include navbar-icon-hover-effect();
+      }
+    }
+
+    & .login-icon{
+      @extend .icon-primary;
+      line-height: 25px;
+      text-align: center;
+      margin: 0px;
+      padding: 15px 0px;
+
+      &:hover{
+        @include navbar-icon-hover-effect();
+      }
+    }
+  }
+
+.main-section{
+  @include flex-items-layout(flex,column,center,center);
+  text-align: center;
+  height: 90%;
+  padding-right: 3%;
+  
+  & h2{
+    width: 580px;  /* Set the width of the box */
+    height:fit-content; /* Set the height of the box */
+    padding: 5px; /* Adjust the padding inside the box */
+    word-wrap: break-word;
+    margin-top: 150px; 
+    font-size:50px;
+  }
+
+  & p{
+    width: 400px;
+    font-size: x-small;
+  }
+
+  & button{
+    @include common-green-button();
+
+    &:hover{
+      @include button-hover-effect();
+    }
+  }
+}
+
+

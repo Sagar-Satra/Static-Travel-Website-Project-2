@@ -1,0 +1,31 @@
+*{
+  box-sizing: border-box;
+  font-family:Verdana, Arial, sans-serif;
+}
+body{
+  display: block;
+  margin: 0;
+}
+.heading{
+  padding: 17px 0 20px;
+  @include flex-items-layout(flex,column,center,center);
+  text-align: center;
+  color: $default-color;
+  font-weight: 600;
+  font-size:24px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.center{
+  @include flex-items-layout(flex,row,center,center);
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+  text-align: center;
+}
+
+.clear{
+  clear: both;
+}

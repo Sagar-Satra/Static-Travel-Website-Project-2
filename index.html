@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Goo</title>
+        <!--Use for icons library ref w3 schools-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="dist/app.css">                            <!--link to SCSS converted css sheet-->
+    </head>
+    <body>
+        <!-- the body of the web page is formatted into header,nav, main and footer elements  -->
+        <header>
+            <div class="header">
+                <div class="logo">Travel Goo</div>
+                <!-- start of nav semantic element -->
+                <nav>
+                <!-- implemented navigation links to various sections of the webpage -->
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href="#aboutus"><i class="fa fa-fw fa-info"></i>About Us</a>
+                    <a href="#popular"><i class="fa fa-fw fa-globe"></i>Popular Destinations</a>
+                    <a href="#best-packages"><i class="fa fa-fw fa-suitcase"></i>Best Packages</a>
+                </nav>
+                <!-- end of nav semantic element -->
+                <div class="header-right">
+                    <a href="#reviews"><i class="fa fa-fw fa-star star-icon"></i></a>
+                    <a href="#"><i class="fa fa-fw fa-user login-icon"></i></a>
+                </div>
+            </div>
+            <div class="main-section">
+                <h2>Your Imagination is Your Only Limit</h2>
+                <div>
+                    <p> We always try to make our customers happy. We provide all kinds of facilities.</p>
+                    <p> Your satisfaction is our main priority.</p>
+                </div>
+                <div><button>Discover More</button></div>
+            </div>    
+        </header>
+
+        <!-- start of main semantic element -->
+        <main>
+            <!-- About Us section --><!-- Below section displays the services offered by the company -->
+            <section id="aboutus">
+                <h2>Our Services</h2>
+                <div class="aboutus-section1">
+                    <article id="ticketbooking" class="aboutus-section1-booking-format">
+                        <figure>
+                            <i class="fa fa-fw fa-ticket green"></i>
+                            <!-- <img src="images/ticketbooking.png" alt="Ticket-Booking" width="40"> -->
+                            <figcaption> <h5>Ticket Booking</h5></figcaption>
+                        </figure>
+                        <p>We book all kind of national or international ticket for your destination.</p>
+                    </article>
+                    <article id="hotelbooking" class="aboutus-section1-booking-format">
+                        <figure>
+                            <i class="fa fa-fw fa-hotel blue"></i>
+                            <!-- <img src="images/hotelbooking.png" alt="Hotel-Booking" width="40"> -->
+                            <figcaption> <h5>Hotel Booking</h5></figcaption>
+                            
+                        </figure>
+                        <p>You can easily book hotels according to your budget by our website.</p>
+                    </article>
+                    <article id="tourplan" class="aboutus-section1-booking-format">
+                        <figure>
+                            <i class="fa fa-fw fa-plane red"></i>
+                            <!-- <img src="images/tour.png" alt="Tour-Plan" width="40"> -->
+                            <figcaption> <h5>Tour Plan</h5></figcaption>
+                            
+                        </figure>
+                        <p>We provide you the best plan within a short time explore more.</p>
+                    </article>
+                </div>
+                
+                <!-- Below section is part of About Us section and showcases the statistics of the company -->
+                <div class="aboutus-section2">
+                        <img src="images/worldmap.png" alt="world-map" id="worldmap">
+                        <div class="aboutus-section2-subsection1">
+                            <h3>We always try to give you the best service</h3>
+                            <p>We always try to make our customer happy. We provide all kind of facilities. Your satisfaction is our main priority.</p>
+                            <div class="aboutus-section3">
+                                <article id="experience">
+                                    <figure>
+                                        <i class="fa fa-fw fa-calendar lightgreen"></i>
+                                        <!-- <img src="images/calendericon.png" alt="calender-icon" width="35"> -->
+                                        <figcaption>15+</figcaption>
+                                        <p>Years of Experience</p>
+                                    </figure>
+                                    
+                                </article>
+                                <article id="statistics">
+                                    <figure>
+                                        <i class="fa fa-fw fa-bar-chart lightgreen"></i>
+                                        <!-- <img src="images/statsicon.png" alt="statistics-icon" width="35"> -->
+                                        <figcaption>15k+</figcaption>
+                                        <p>Happy Travellers</p>
+                                    </figure>
+                                    
+                                </article>
+                                <article id="places">
+                                    <figure>
+                                        <i class="fa fa-fw fa-map-marker lightgreen"></i>
+                                        <!-- <img src="images/locationicon.png" alt="location-icon" width="35"> -->
+                                        <figcaption> <strong>650+</strong></figcaption>
+                                        <p>Places Visited</p>
+                                    </figure>
+                                    
+                                </article>
+                                <article id="travelhistory">
+                                    <figure>
+                                        <i class="fa fa-fw fa-history lightgreen"></i>
+                                        <!-- <img src="images/historyicon.png" alt="history-icon" width="35"> -->
+                                        <figcaption> <strong>2k+</strong></figcaption>
+                                        <p>Travel History</p>
+                                    </figure>
+                                    
+                                </article>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <!-- popular destination section -->
+            <!-- below section highlights the popular destinations maximum visited by company's customers -->
+            <section id="popular">
+                <h2 class="heading">Our Popular Destinations</h2>
+                <!-- <div> -->
+                    <section class="popular-container flex-container flex-row-reverse mr-350 mt-30">
+                        
+                        <section>
+                            <article id="europe" class="flex-container left-img-card">
+                                <figure>
+                                    <img src="images/europe.png" alt="picture-of-europe-monuments" width="150">
+                                    <!-- <figcaption>Europe</figcaption>
+                                    <p>20+ Spots 2D &amp; 3N</p>
+                                    <span>&gt;</span> -->
+                                </figure>
+                                <div class="center  flex-grow-1 m-10">
+                                    <div class="flex-container flex-grow-1">
+                                        <span class="fw-600">Europe</span>
+                                    </div>
+                                    <div class="flex-container flex-grow-2">
+                                        <span>  20+ Spots<br>2D &amp; 3N</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-fw fa-toggle-right"></i> 
+                                    </div>
+                                </div>
+                                
+                            </article>
+                            <article id="india" class="flex-container left-img-card">
+                                <figure>
+                                    <img src="images/india.png" alt="picture-of-india-monument" width="150">
+                                    <!-- <figcaption>India</figcaption>
+                                    <p>25+ Spots 3D &amp; 3N</p>
+                                    <span>&gt;</span> -->
+                                </figure>
+                                <div class="center flex-grow-1 m-10">
+                                    <div class="flex-container flex-grow-1">
+                                        <span class="fw-600">India</span>
+                                    </div>
+                                    <div class="flex-container flex-grow-2">
+                                        <span>  25+ Spots<br>4D &amp; 3N</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-fw fa-toggle-right"></i> 
+                                    </div>   
+                                </div>
+                            </article>
+                            <article id="australia" class="flex-container left-img-card">
+                                <figure>
+                                    <img src="images/australia.png" alt="picture-of-australia-monument" width="150">
+                                    <!-- <figcaption>Australia</figcaption>
+                                    <p>20+ Spots 3D &amp; 2N</p>
+                                    <span>&gt;</span> -->
+                                </figure>
+                                <div class="center flex-grow-1 m-10">
+                                    <div class="flex-container flex-grow-1">
+                                        <span class="fw-600">Australia</span>
+                                    </div>
+                                    <div class="flex-container flex-grow-2">
+                                        <span>  20+ Spots<br>3D &amp; 2N</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-fw fa-toggle-right"></i> 
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </section>
+                <!-- </div> -->
+            </section>
+            <!-- best packages section -->
+            <!-- below section highlights the best reasonably priced packages -->
+            <div class="clear"></div>
+            <section id="best-packages">
+                <h2 class="heading">Best Packages For You</h2>
+                <div id="filter-selection">
+                    <button class="btn active"> Hot Deals</button>
+                    <button class="btn"> Backpack</button>
+                    <button class="btn"> South Asia</button>
+                    <button class="btn"> Honeymoon</button>
+                    <button class="btn"> Europe</button>
+                    <button class="btn"> More</button>
+                </div>
+                  <!-- Packages Filter Grid -->
+                <div class="row">
+                    <div class="column hot-deals">
+                        <div class="content">
+                            <img src="images/indonesia.png" alt="Mountains" class="package-img">
+                            <div class="content-info">
+                                <span class="fl">3 Days, 2 Nights</span>
+                                <span class="fr">&dollar;500 &#47; Person</span>
+                                <div class="clear"></div>
+                                <p>Explore the Shrimes & blossoms here in this beautiful country.</p>
+                                <div class="content-foot">
+                                    <span class="fl location"><i class="fa fa-fw fa-map-marker"></i>Indonesia</span>
+                                    <a href="#" class="know-more"> <span class="fr">Know More</span></a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-deals">
+                        <div class="content">
+                            <img src="images/japan.png" alt="Mountains" class="package-img">
+                            <div class="content-info">
+                                <span class="fl">3 Days, 2 Nights</span>
+                                <span class="fr">&dollar;800 &#47; Person</span>
+                                <div class="clear"></div>
+                                <p>Explore the Shrimes & blossoms here in this beautiful country.</p>
+                                <div class="content-foot">
+                                    <span class="fl location"><i class="fa fa-fw fa-map-marker"></i>Japan</span>
+                                    <a href="#" class="know-more"> <span class="fr">Know More</span></a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column hot-deals">
+                        <div class="content">
+                            <img src="images/alps.png" alt="Mountains" class="package-img">
+                            <div class="content-info">
+                                <span class="fl">3 Days, 2 Nights</span>
+                                <span class="fr">&dollar;600 &#47; Person</span>
+                                <div class="clear"></div>
+                                <p>Explore the majestic mountains and landscapes day and nights.</p>
+                                <div class="content-foot">
+                                    <span class="fl location"><i class="fa fa-fw fa-map-marker"></i>Alps</span>
+                                    <a href="#" class="know-more"> <span class="fr">Know More</span></a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+                <div class="flex-container center">
+                    <button class="btn w-210 active">Discover More</button>
+                </div> 
+            </section> 
+            <div class="clear"></div>
+            <!-- booking section -->
+            <!-- below section highlights the steps and easiness of booking a trip -->
+            <section id="booking">
+                <h2 class="center p-t-25">Book Your Next Trip in 3 Easy Steps</h2>
+                <h3 class="center fw-600">Easy and Fast</h3>
+                <div class="bookingsection flex-container">
+                    <div class="flex-container">
+                        <section class="bookingsubsection1">
+                            <article class="bookingarticles flex-container">
+                                <div class="align-content-end">
+                                    <img src="images/destinationicon.png" alt="Destination-Icon">
+                                </div>
+                                <div class="flex-column booking-content">
+                                    <div>
+                                        <p class="fw-600 color-grey">Choose Destination</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-size-12 color-light-grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, possimus.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="bookingarticles flex-container">
+                                <div class="align-content-end">
+                                    <img src="images/swim.png" alt="Payment-Icon">
+                                </div>
+                                <div class="flex-column booking-content">
+                                    <div>
+                                        <p class="fw-600 color-grey">Make Payment</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-size-12 color-light-grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, possimus.</p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="bookingarticles flex-container">
+                                <div class="align-content-end">
+                                    <img src="images/car.png" alt="Airport-Icon">
+                                </div>
+                                <div  class="flex-column booking-content">
+                                    <div>
+                                        <p class="fw-600 color-grey">Reach Airport on Selected Date</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-size-12 color-light-grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, possimus.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="flex-container m-10">
+                        <section class="bookingsubsection2">
+                            <div> 
+                                <article class="booking-card">
+                                    <figure class="no-margin">
+                                        <img src="images/banner.png" alt="GreeceShoreline" >
+                                    </figure>
+                                    <div class="card-header flex-container flex-column">
+                                        <div class="m-b-5 m-t-25">
+                                            <span class="fw-600 color-grey">Trip to Greece</span>
+                                        </div>
+                                        <div class="m-b-5">
+                                           <span class="color-light-grey font-size-16"> 14-29 June &#124; by Robin Jackson</span>
+                                        </div>
+                                        <div>
+                                            <a href="#leave"><img src="images/leaveicon.png" alt="Leave-Icon" width="45"></a>
+                                            <a href="#map"><img src="images/mapicon.png" alt="Map-Icon" width="45"></a>
+                                            <a href="#navigate"><img src="images/navigateicon.png" alt="Navigate-Icon" width="45"></a>
+                                        </div>
+                                        <div>
+                                            <span class="fl">
+                                                <img src="images/peopleicon.png" alt="People-going-icon" width="25">
+                                                &ensp; 24 people going
+                                            </span>
+                                            <span class="fr">
+                                                <img src="images/likebuttonicon.png" alt="Like-button-icon" width="25">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="overlay-card">
+                                <section class="bookingarticles flex-container">
+                                    <div class="align-content-baseline">
+                                        <img src="images/ongoing.png" alt="rome-monument">
+                                    </div>
+                                    <div  class="flex-column booking-content">
+                                        <div>
+                                            <span class="color-light-grey font-size-12">Ongoing</span>
+                                        </div>
+                                        <div class="m-b-5">
+                                            <span class="fw-600 color-grey p-b-5">Trip to Rome</span>
+                                        </div>
+                                        <div class="m-b-5"><span class="color-purple">40&percnt;</span> <span fw-600>completed</span></div>
+                                        <div class="m-b-5"> <progress value="40" max="100"> 40% </progress></div>
+                                    </div>
+                                </section>
+                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            <div class="clear"></div>
+            <!-- customer review section -->
+            <!-- Displays customer testimonials with images. -->
+            <section id="reviews" class="bg-grey scroller">
+                <h2 class="heading">What People Say About Us</h2>
+                <div class="scrolling-wrapper">
+                    <div class="card-scroll">
+                        <div class="destination-review">
+                            <img src="images/japan.png" alt="Japan">
+                        </div>
+                        <div class="customer-face-review">
+                            <img src="images/face.png" alt="customer-face" width="75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorem nam velit omnis distinctio aspernatur illum ullam dignissimos similique ipsa hic perspiciatis quisquam, minus aut blanditiis molestiae nostrum asperiores quae.</p>
+                            <p><strong>- Joe Stanicess</strong></p>
+                        </div>
+                    </div>
+                    <div class="card-scroll">
+                        <div class="destination-review">
+                            <img src="images/greencenew2.png" alt="Greece">
+                        </div>
+                        <div class="customer-face-review">
+                            <img src="images/face.png" alt="customer-face" width="75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorem nam velit omnis distinctio aspernatur illum ullam dignissimos similique ipsa hic perspiciatis quisquam, minus aut blanditiis molestiae nostrum asperiores quae.</p>
+                            <p><strong>- Anthony Joel</strong></p>
+                        </div>
+                    </div>
+                    <div class="card-scroll">
+                        <div class="destination-review">
+                            <img src="images/alps.png" alt="Alps">
+                        </div>
+                        <div class="customer-face-review">
+                            <img src="images/face.png" alt="customer-face" width="75">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolorem nam velit omnis distinctio aspernatur illum ullam dignissimos similique ipsa hic perspiciatis quisquam, minus aut blanditiis molestiae nostrum asperiores quae.</p>
+                            <p><strong>- John Sydney</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- subscribe form and short links -->
+            <!-- Form for users to subscribe to newsletters with full name, email validations and feedback/questions. -->
+            <section class="form-section">
+                <div>
+                    <img src="images/subscribeicon.png" alt="Subscribe-Icon" width="35">
+                    <div>
+                        <p>Subscribe to get information, latest news and other interesting offers about Travel Goo</p>
+                    </div>
+                    <form action="index.html" method="GET">
+                        <div class="inside-form-align">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" class="name-icon" placeholder="Enter your name" required pattern="[a-zA-Z\s]+" minlength="5" maxlength="20" title="Full Name should only contain letters and spaces.">
+                        </div>
+                        <div class="inside-form-align"><label for="email">Email ID:</label>
+                            <input type="email" id="email" name="email" class="email-icon" placeholder="Your email" required title="Please enter a valid email address.">
+                        </div>
+                        <div class="inside-form-align"><label for="feedback">Feedback/Questions:</label>
+                            <textarea name="feedback" id="feedback" class="faq-icon" placeholder="Your Feedback/ Questions" rows="2" cols="10" minlength="10" maxlength="200" required title="Feedback should be between 10 to 200 characters."></textarea>
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </section>            
+        </main>
+        <!-- end of main semantic element -->
+        <!-- start of footer semantic element -->
+        <footer class="footer">
+            <div class="footersection">
+                <section class="footer-logo">
+                    <h3>Travel Goo</h3>
+                    <p>Book your trip in minutes, get full control for much longer.</p>
+                </section>
+                <section>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Careers">Careers</a></li>
+                        <li><a href="#Mobile">Mobile</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#Help">Help/FAQ</a></li>
+                        <li><a href="#Press">Press</a></li>
+                        <li><a href="#Affiliates">Affiliates</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#Airline-Fees">Airline Fees</a></li>
+                        <li><a href="#Airlines">Airlines</a></li>
+                        <li><a href="#Low-Fare-Tips">Low Fare Tips</a></li>
+                    </ul>
+                </section>
+                <section class="social-media">
+                    <h4>Follow Us On</h4>
+                    <div>
+                        <span><a href="https://www.facebook.com/"><img src="images/facebookicon.png" alt="Facebook-Icon" width="45"></a></span>
+                        <span><a href="https://www.instagram.com/"><img src="images/instagramicon.png" alt="Instagram-Icon" width="45"></a></span>
+                        <span><a href="https://x.com/?lang=en"><img src="images/twittericon.png" alt="Twitter-Icon" width="45"></a></span>
+                    </div>
+                    <div><p>Discover Our App</p></div>
+                    <div class="footer-store-container">
+                        <div class="footer-store-subcontainer">
+                            <div class="store-logo">
+                                <img src="images/googleplaystorelogo.png" alt="Google-Play-Logo">
+                            </div>
+                            <div class="logo-content">
+                                <span>GET IT ON</span>
+                                <p>Google Play</p>
+                            </div>
+                        </div>
+                        <div class="footer-store-subcontainer">
+                            <div class="store-logo">
+                                <img src="images/applestorelogo.png" alt="Apple-Store-Logo">
+                            </div>
+                            <div class="logo-content">
+                                <span>Available on the</span>
+                                <p>Apple Store</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <span><a href="#googlestore"><img src="images/googleplaystoreicon.png" alt="Google-Store-Icon" width="70"></a></span>
+                        <span><a href="#appstore"><img src="images/applestoreicon.png" alt="Apple-Store-Icon" width="70"></a></span> -->
+                    </div>
+                </section>
+            </div>
+            <p>&copy; All rights reserved &#64; TravelGoo.co</p>
+        </footer>
+        <!-- end of footer semantic element -->
+        <script>
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("filter-selection");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                      btns[i].addEventListener("click", function(){
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                      });
+                    }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+@mixin navbar-icon-hover-effect(){
+    @extend .text-red;
+    @extend .element-bkg-acqua-marine;
+}
+
+@mixin button-hover-effect(){
+    @extend .text-special-btn-green;
+    @extend .element-bkg-primary;
+}
+
+@mixin card-layout($bkg-color,$h,$w,$text-align,$tb-padding,$lr-padding){
+    background-color: $bkg-color;
+    height: $h;
+    width: $w;
+    text-align: $text-align;
+    padding: $tb-padding $lr-padding;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-items-layout($flex-value,$direction-value,$cross-axis-value,$main-axis-value){
+    display: $flex-value;
+    flex-direction: $direction-value;
+    align-items: $cross-axis-value;
+    justify-content: $main-axis-value;
+}
+
+@mixin common-green-button(){
+    min-width: 150px;
+    @extend .element-bkg-special-btn-green;
+    border: none;
+    @extend .text-primary;
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+@mixin form-placeholder-icon($icon-link){
+    padding-left: 30px;
+    background: $icon-link no-repeat left;
+    background-size: 25px;
+    background-color: $primary-color;
+}

@@ -1,0 +1,95 @@
+/* form section  Styling*/
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    height : 55vh;
+    
+    & img{
+        position: absolute;
+        top: -15px;
+        right: -12px;
+        border-radius: 25px;
+    }
+}
+
+.form-section > div{
+    width: 65%;
+    position: relative;
+    background-color: rgba(128, 235, 230, 0.349);    
+    border-radius: 70px 15px 15px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    padding: 50px;
+    isolation: isolate;
+    
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+        background-image: url(../images/form-backgroundimage.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+    }
+
+    & > div > p{
+        width: 600px;
+        font-weight: bold;
+        margin: 50px;
+        text-align: center;
+    }
+
+    & > form{
+        width: 50%;
+        border-radius: 70px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        & button{
+            @include common-green-button();
+        
+            &:hover{
+              @include button-hover-effect();
+            }
+        
+        } 
+    }
+}
+
+.inside-form-align{
+    width: 105%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-weight: bold;
+    font-size: small;
+
+    input, textarea{
+        width: 50%;
+    }
+}
+
+.name-icon{
+    @include form-placeholder-icon(url(../images/nameicon.png));
+}
+
+.email-icon{
+    @include form-placeholder-icon(url(../images/emailicon.png));
+}
+
+.faq-icon{
+    @include form-placeholder-icon(url(../images/faqicon.png));    
+}

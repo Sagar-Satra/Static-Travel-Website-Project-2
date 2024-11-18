@@ -1,0 +1,126 @@
+/* 2nd page styling */
+#aboutus {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: $default-color;
+    @include flex-items-layout(flex,column,stretch,start);
+    }
+
+.aboutus-section1{
+    @include flex-items-layout(flex,row,center,space-evenly);
+    height: 25vh; 
+}
+
+.aboutus-section1-booking-format{
+    @include card-layout($card-background-color,20vh,45vh,left,10px,15px);
+    
+    & figure{
+        margin: 0px;
+        padding: 3px 0px;
+    }
+
+    & p{
+        margin: 0px;
+        padding: 3px 0px;
+        font-size: 10px;
+    }
+
+    h5{
+        margin: 10px 0px 4px 0px;
+        padding: 4px 0px 4px 0px;
+    }
+}
+
+#hotelbooking {
+    background-color: $secondary-background-color;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.green{
+    @extend .icon-special-btn-green;
+    font-size: 30px;
+}
+
+.blue{
+    @extend .icon-blue;
+    font-size: 30px;
+}
+
+.red{
+    @extend .icon-red;
+    font-size: 30px;
+}
+
+/* section 2 of about Us */
+.aboutus-section2{
+    position: relative;
+    margin-top: 10px;
+    align-items:center;
+    background-color: rgb(215, 236, 239);
+
+    & h3{
+        height:fit-content; /* Set the height of the box */
+        padding: 5px 420px; 
+        font-size:30px;
+        margin-bottom: 5px;
+    }  
+}
+
+#worldmap{
+    opacity: 0.2;
+    width: 100%;
+    height: 65vh;
+}
+
+.aboutus-section2-subsection1{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 70vh;
+  transform: translate(-50%, -50%);
+
+    & > p {
+        padding: 5px 470px;
+        font-size:10px;
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+.aboutus-section3{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    height: 25vh;
+    gap: 10px;
+
+    & article{
+        @include card-layout($secondary-background-color,25vh,25vh,center,0px,0px);
+    }
+
+    & figure{
+        margin: 0px;
+        padding: 10px;
+    
+    }
+
+    & figcaption{
+        font-weight: bolder;
+        margin-top: 15px;
+        font-size: 25px;
+    }
+
+    p{
+        padding: 0px 30px;
+        margin-top: 15px;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Calibri;
+    } 
+}
+
+.lightgreen{
+    @extend .icon-green ;
+    font-size: 30px;
+}

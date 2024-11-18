@@ -1,0 +1,94 @@
+/* footer styling */
+
+footer{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+    box-shadow: 3px 0px 10px 0px #ccc;
+}
+
+.footer > p{
+    font-size: xx-small;
+}
+
+.footersection{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: left;
+    gap: 95px; 
+    
+    & section{
+        width: 150px; 
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0; 
+        margin: 20px 0px;
+        text-align: left;
+        font-size: small;
+    }
+
+    li{
+        margin: 5px 0px;
+        padding: 10px 0px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $secondary-color;
+    }
+}
+
+.footer-logo{
+   text-align: center;
+
+    & h3{
+        font-size: x-large;
+        margin: 5px 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    & p{
+        font-size: xx-small;
+    }
+}
+
+.footer-store-container{
+    @include flex-items-layout(flex,row,center,space-between);
+    text-align: left;
+    width:100%;
+    font-size: xx-small;
+    gap: 8px;
+    color: white;
+}
+.footer-store-subcontainer{
+    @include flex-items-layout(flex,row,center,space-evenly);
+    text-align: left;
+    gap: 0px;
+    background-color: $default-color;
+    width: 200px;
+    height: max-content;
+    border-radius: 5px;
+    padding: 0.8px;
+
+}
+
+.store-logo{
+    width: max-content;
+
+    img{
+        margin: 0px 0px;
+        width: 15px;
+    }
+}
+
+.logo-content, .logo-content p, .logo-content span{
+    margin: 0px;
+    padding: 0px;
+    font-size: 5px;
+}

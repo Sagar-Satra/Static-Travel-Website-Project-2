@@ -1,0 +1,62 @@
+/* 3rd page styling - popular section css  */
+#popular{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: $default-color;
+    min-height: 50vh;
+    height: 100vh; /* Full viewport height */
+    background-image: url(../images/worldmap2.png);
+    background-repeat: no-repeat;
+    background-size:49% 100%;
+}
+
+.fw-600{
+  font-weight: 600;
+}
+
+.popular-container{
+   margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+.mr-350{
+  margin-right: 150px;
+}
+.mt-30{
+  margin-top: 0px;
+}
+.left-img-card{
+    background: white;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    margin: 25px;
+    border-radius: 12px;
+    width: 450px;
+    height: 150px;
+
+    & figure{
+      margin: 0 10px 0 0;
+      width: 34%;
+      border-radius: 8px;
+
+      & img{
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+    }
+}
+
+.m-10{
+  margin: 10px;
+}
+.flex-grow-1{
+  flex-grow: 1;
+}
+.flex-grow-2{
+  flex-grow: 2;
+}
